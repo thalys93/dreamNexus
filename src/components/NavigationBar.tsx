@@ -30,9 +30,9 @@ function NavigationBar() {
 
           </Nav>
           <Nav className="font-lexend items-end font-extralight uppercase">            
-              <Nav.Link href="About" className="text-whiteTxt hover:text-orange transition-all hover:underline">Sobre</Nav.Link>
-              <Nav.Link href={`Project/${uid}/astralWield`} className="text-whiteTxt hover:text-orange transition-all hover:underline">Projetos</Nav.Link>
-              <Nav.Link href="Contact" className="text-whiteTxt hover:text-orange transition-all hover:underline">Contato</Nav.Link>            
+              <Nav.Link href="About" className="text-whiteTxt hover:text-orange transition-all hover:underline underline-offset-4">Sobre</Nav.Link>
+              <Nav.Link href={`Project/${uid}/astralWield`} className="text-whiteTxt hover:text-orange transition-all hover:underline underline-offset-4">Projetos</Nav.Link>
+              <Nav.Link href="Contact" className="text-whiteTxt hover:text-orange transition-all hover:underline underline-offset-4">Contato</Nav.Link>            
           </Nav>
         </Navbar.Collapse>
       </Container>

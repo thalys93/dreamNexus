@@ -14,10 +14,11 @@ export default {
       colors: {
         orange: "#F05941",
         whiteTxt: "#ECCCC7",
+        whiteTxtWeak: "#A78B87",
         orangeBold: "#F3482D",
         buttonTxt: "#FFFFFF",
         orangeWeak: "#7A2A1D",
-        darkTXT: "#473735",
+        darkTXT: "#473735",        
         darkBG: "#352222",
         borderOrange: "#B72B2B",
       }

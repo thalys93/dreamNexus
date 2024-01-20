@@ -5,7 +5,7 @@ function Home() {
     <Container className="lg:ml-52 lg:mt-28">
       <Row>
         <Col sm>
-          <section className="mt-28 ml-24">
+          <section className="mt-28 ml-24 animate__animated animate__fadeInLeft select-none">
             <h1 className="font-lexend text-xl text-whiteTxt underline underline-offset-4"> dream nexus studio : </h1>            
             <p className="font-lexend font-extralight text-whiteTxt text-3xl">
               Criando <b className="text-orange"> mundos </b> que
@@ -16,11 +16,11 @@ function Home() {
         </Col>
 
         <Col sm>
-          <section>
+          <section className="animate__animated animate__fadeIn select-none">
             <Figure>
               <Figure.Image
                 width={200}                
-                alt="171x180"
+                alt="Felix the cat"
                 src="./Boneco1.png"
               />
               <Figure.Caption className="text-orangeWeak text-center">
