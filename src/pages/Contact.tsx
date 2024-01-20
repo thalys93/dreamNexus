@@ -1,6 +1,6 @@
 import { Col, Container, Figure, Row } from "react-bootstrap"
-import { FaInstagram, FaSteam, FaWhatsapp } from "react-icons/fa";
-import { instagramLink, whatsappLink } from "../components/FooterBar";
+import { FaInstagram, FaSteam, FaWhatsapp, FaYoutube } from "react-icons/fa";
+import { instagramLink, whatsappLink, youtubeVideoLink } from "../components/FooterBar";
 
 function Contact() {
   return (
@@ -16,15 +16,20 @@ function Contact() {
                 </a>
               </li>
               <li>
-                <a target="_blank" className="text-darkTXT font-jura font-extralight flex-row text-xl flex gap-2 items-center ">
-                  <FaSteam size={20} /> indisponivel
+                <a href={youtubeVideoLink} target="_blank" className=" text-whiteTxt font-jura text-xl font-extralight flex-row flex gap-2 items-center hover:text-orangeBold transition-all">
+                  <FaYoutube size={20} /> Veja o Vídeo de Lançamento
                 </a>
-              </li>
+              </li>            
               <li>
                 <a href={whatsappLink} target="_blank" className=" text-whiteTxt font-jura text-xl font-extralight flex-row flex gap-2 items-center hover:text-orangeBold transition-all">
                   <FaWhatsapp size={20} /> me envie uma mensagem
                 </a>
-              </li>
+              </li>    
+              <li>
+                <a target="_blank" className="text-darkTXT font-jura font-extralight flex-row text-xl flex gap-2 items-center ">
+                  <FaSteam size={20} /> indisponivel
+                </a>
+              </li>          
             </ul>
           </section>
         </Col>

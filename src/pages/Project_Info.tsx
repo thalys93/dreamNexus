@@ -1,4 +1,5 @@
 import { Col, Container, Figure, Row } from "react-bootstrap"
+import Iframe from 'react-iframe'
 
 function Project_Info() {
   return (        
@@ -77,18 +78,12 @@ function Project_Info() {
             </section>
           </Col>
 
-          <Col sm>
-            <Figure className="animate__animated animate__fadeInRight lg:mt-16 lg:ml-24">
-              <Figure.Image
-                width={400}
-                alt="astralwield2"
-                src="/game_1.jpg"
-                rounded
-              />
-              <Figure.Caption className="font-jura text-darkTXT font-light text-xl lowercase text-center mt-3 select-none hover:text-orange transition-all">
-                comerciante misterioso
-              </Figure.Caption>
-            </Figure>
+          <Col sm className="p-3 lg:p-0">
+          <Iframe           
+          className="w-full h-96 lg:w-3/4 lg:h-72" 
+          url="https://www.youtube.com/embed/MkAcukIAmh4?si=ZP1m1PYc1KrZTqG3" 
+          title="Astral Wield - Reveal Trailer"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"/>
           </Col>
         </Row>
       </Container>          

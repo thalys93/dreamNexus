@@ -1,9 +1,11 @@
 import { Container, Nav, Navbar } from "react-bootstrap"
-import { FaInstagram, FaSteam, FaWhatsapp } from "react-icons/fa";
+import { FaInstagram, FaSteam, FaWhatsapp, FaYoutube } from "react-icons/fa";
 
 // info links socials
 export const instagramLink = 'https://www.instagram.com/dreamnexus_studios/'
 export const whatsappLink = 'https://api.whatsapp.com/send?phone=555195726941&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Dream%20Nexus%20Studios.'
+export const youtubeLink = 'https://www.youtube.com/@DreamNexus_Studios'
+export const youtubeVideoLink = 'https://www.youtube.com/watch?v=MkAcukIAmh4&t=5s&ab_channel=DreamNexusStudios'
 
 // >> desativado até lançamento do Jogo
 // const steamLink = 'https://steamcommunity.com/profiles/76561199456925447/'
@@ -31,6 +33,9 @@ function FooterBar() {
                     </Nav.Link>
                     <Nav.Link href={whatsappLink} target="_blank" className="text-orange hover:text-whiteTxt" active={false}>
                         <FaWhatsapp size={25} />
+                    </Nav.Link>
+                    <Nav.Link href={youtubeLink} target="_blank" className="text-orange hover:text-whiteTxt" active={false}>
+                        <FaYoutube size={25}/>
                     </Nav.Link>
                 </Nav>
             </Container>
