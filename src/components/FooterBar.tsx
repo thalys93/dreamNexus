@@ -9,7 +9,7 @@ function FooterBar() {
     const whatsappLink = 'https://api.whatsapp.com/send?phone=555195726941&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Dream%20Nexus%20Studios.'
     
     // >> desativado até lançamento do Jogo
-    // const steamLink = 'https://store.steampowered.com/developer/dreamnexusstudios'
+    // const steamLink = 'https://steamcommunity.com/profiles/76561199456925447/'
     
     return (
         <Navbar className="m-4 items-center" fixed="bottom">

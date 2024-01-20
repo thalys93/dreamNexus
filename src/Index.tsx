@@ -1,10 +1,14 @@
+import { Outlet } from "react-router-dom"
 import FooterBar from "./components/FooterBar"
 import NavigationBar from "./components/NavigationBar"
 
 function Index() {
   return (
     <section>
-      <NavigationBar />
+      <header>
+        <NavigationBar />
+      </header>      
+        <Outlet />      
       <footer>
         <FooterBar />
       </footer>
