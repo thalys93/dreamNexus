@@ -15,9 +15,9 @@ function FooterBar() {
     
     
     return (
-        <Navbar className="m-4 items-center" fixed="bottom">
+        <Navbar className="mt-10 lg:m-4 items-center" >
             <Container fluid>
-                <Navbar.Brand className="text-orange select-none hover:text-whiteTxt transition-all font-jura flex flex-row items-center gap-2">
+                <Navbar.Brand className="text-orange select-none hover:text-whiteTxt transition-all lg:text-xl text-md font-jura flex flex-row items-center gap-2">
                     Dream Nexus © {year}
                 </Navbar.Brand>
                 <Nav className="me-auto items-end font-lexend font-extralight uppercase">

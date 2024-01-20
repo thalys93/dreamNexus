@@ -4,10 +4,10 @@ import { instagramLink, whatsappLink } from "../components/FooterBar";
 
 function Contact() {
   return (
-    <Container className="lg:ml-52 lg:mt-28">
+    <Container className="lg:ml-52 lg:mt-28 lg:mb-44">
       <Row>
         <Col sm>
-          <section className="mt-24 ml-24 animate__animated animate__fadeInLeft select-none">
+          <section className="lg:mt-28 lg:ml-24 animate__animated animate__fadeInLeft select-none">
             <h1 className="font-lexend text-xl text-whiteTxt underline underline-offset-4"> deseja entrar em contato : </h1>
             <ul className="mt-2">
               <li>

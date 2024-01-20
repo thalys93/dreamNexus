@@ -2,12 +2,12 @@ import { Col, Container, Figure, Row } from "react-bootstrap"
 
 function Home() {
   return (
-    <Container className="lg:ml-52 lg:mt-28">
+    <Container className="lg:ml-52 lg:mt-28 lg:mb-40 ">
       <Row>
         <Col sm>
-          <section className="mt-28 ml-24 animate__animated animate__fadeInLeft select-none">
-            <h1 className="font-lexend text-xl text-whiteTxt underline underline-offset-4"> dream nexus studio : </h1>            
-            <p className="font-lexend font-extralight text-whiteTxt text-3xl">
+          <section className="lg:mt-28 lg:ml-24 animate__animated animate__fadeInLeft select-none">
+            <h1 className="font-lexend lg:text-xl text-whiteTxt underline underline-offset-4"> dream nexus studio : </h1>
+            <p className="font-lexend font-extralight text-whiteTxt text-2xl lg:text-3xl">
               Criando <b className="text-orange"> mundos </b> que
               <br /> você nunca vai querer <br />
               <b className="text-orange"> deixar </b>
