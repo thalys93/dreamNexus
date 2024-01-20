@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    animation-duration: 0.5s;
+}
+
+body{
+    background: #0A0808;
+    background-image: url('./bg.png');
+    background-blend-mode: overlay;
+    background-size: cover;
+    color: #ECCCC7;
+}
