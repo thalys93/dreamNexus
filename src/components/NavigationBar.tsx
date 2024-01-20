@@ -12,6 +12,8 @@ function NavigationBar() {
     };
   }, []);
 
+  const uid = '5kW0LmdQ'
+
   return (
     <Navbar expand="lg" className="m-4 items-center">
       <Container fluid>
@@ -29,7 +31,7 @@ function NavigationBar() {
           </Nav>
           <Nav className="font-lexend items-end font-extralight uppercase">            
               <Nav.Link href="About" className="text-whiteTxt hover:text-orange transition-all hover:underline">Sobre</Nav.Link>
-              <Nav.Link href="Projects" className="text-whiteTxt hover:text-orange transition-all hover:underline">Projetos</Nav.Link>
+              <Nav.Link href={`Project/${uid}/astralWield`} className="text-whiteTxt hover:text-orange transition-all hover:underline">Projetos</Nav.Link>
               <Nav.Link href="Contact" className="text-whiteTxt hover:text-orange transition-all hover:underline">Contato</Nav.Link>            
           </Nav>
         </Navbar.Collapse>
