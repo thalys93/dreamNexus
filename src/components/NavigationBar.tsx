@@ -35,9 +35,8 @@ function NavigationBar() {
   }
 
   useEffect(() => {
-    checkRouteName(routeName) 
-    console.log(isProjectRoute);
-    
+    checkRouteName(routeName)   
+        
   }, [routeName, isProjectRoute])
 
   return (

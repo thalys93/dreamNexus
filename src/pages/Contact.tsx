@@ -19,17 +19,17 @@ function Contact() {
                 <a href={youtubeVideoLink} target="_blank" className=" text-whiteTxt font-jura text-xl font-extralight flex-row flex gap-2 items-center hover:text-orangeBold transition-all">
                   <FaYoutube size={20} /> Veja o Vídeo de Lançamento
                 </a>
-              </li>            
+              </li>
               <li>
                 <a href={whatsappLink} target="_blank" className=" text-whiteTxt font-jura text-xl font-extralight flex-row flex gap-2 items-center hover:text-orangeBold transition-all">
                   <FaWhatsapp size={20} /> me envie uma mensagem
                 </a>
-              </li>    
+              </li>
               <li>
                 <a target="_blank" className="text-darkTXT font-jura font-extralight flex-row text-xl flex gap-2 items-center ">
                   <FaSteam size={20} /> indisponivel
                 </a>
-              </li>          
+              </li>
             </ul>
           </section>
         </Col>
@@ -41,12 +41,12 @@ function Contact() {
                 width={200}
                 alt="Felix the cat"
                 src="./Boneco1.png"
-              />              
+              />
             </Figure>
           </section>
-        </Col>
-      </Row>
 
+        </Col>        
+      </Row>    
     </Container>
   )
 }
