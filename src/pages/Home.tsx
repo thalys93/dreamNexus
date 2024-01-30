@@ -14,7 +14,7 @@ function Home() {
             </p>
 
             <p className="font-lexend font-extralight text-sm lg:text-lg">
-              <a href="/Project/news/making_of" target="_blank" className="text-whiteTxtWeak hover:text-orange transition-all duration-200">
+              <a href="/Project/news/making_of" className="text-whiteTxtWeak hover:text-orange transition-all duration-200">
                 Novas fotos da semana #1 (Astral Wield - Making of)
               </a>
             </p>
