@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap"
-import { FaInstagram, FaSteam, FaWhatsapp, FaYoutube } from "react-icons/fa";
+import { FaInstagram, FaWhatsapp, FaYoutube } from "react-icons/fa";
 import { TbWorld } from "react-icons/tb";
 import { FaRegBell } from "react-icons/fa";
 
