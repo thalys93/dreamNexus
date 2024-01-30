@@ -11,8 +11,7 @@ function Project_News() {
                         <p className="font-jura font-light text-whiteTxt text-md lg:text-xl">
                             <b className="font-bold">Astral Wield</b> conta com uma série de colecionáveis espalhados pelo mapa, <br />
                             que podem ser encontrados e coletados pelo jogador. <br />
-                            Cada <b className="font-bold">colecionável</b> possui uma descrição única, <br />
-                            que pode ser acessada pelo <b className="font-bold">menu de colecionáveis.</b> <br />
+                            Cada <b className="font-bold">colecionável</b> possui uma descrição única. <br />                            
                         </p>
 
                         <ul className="flex flex-row gap-0 mt-5">
