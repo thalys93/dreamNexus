@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap"
 import { FaInstagram, FaSteam, FaWhatsapp, FaYoutube } from "react-icons/fa";
 import { TbWorld } from "react-icons/tb";
+import { FaRegBell } from "react-icons/fa";
 
 // info links socials
 export const instagramLink = 'https://www.instagram.com/dreamnexus_studios/'
@@ -21,6 +22,7 @@ function FooterBar() {
     const routeName = window.location.pathname
 
     const [isContactRoute, setIsContactRoute] = useState(false)
+    const [isHomeRoute, setIsHomeRoute] = useState(false)
 
     const checkContactRoute = (routeName: string) => {
         if (routeName === '/Contact') {
@@ -30,8 +32,17 @@ function FooterBar() {
         }
     }
 
+    const checkHomeRoute = (routeName: string) => {
+        if (routeName === '/') {
+            setIsHomeRoute(true)
+        } else {
+            setIsHomeRoute(false)
+        }
+    }
+
     useEffect(() => {
         checkContactRoute(routeName)
+        checkHomeRoute(routeName)
     }, [routeName])
 
 
@@ -43,6 +54,16 @@ function FooterBar() {
                 </section>
             ) : null}
 
+            {isHomeRoute ? (
+                <section className="justify-center items-center flex">
+                    <h1 className="text-darkTXT items-center select-none">
+                        <a href="https://www.youtube.com/watch?v=PTqjwAlN-_Q&ab_channel=DreamNexusStudios" target="_blank" className="flex flex-row gap-2 hover:text-orange transition-all duration-200 items-center">
+                            <FaRegBell />  Veja o Trailer de Revelação de Combate
+                        </a>
+                    </h1>
+                </section>
+            ) : null}
+
             <Navbar className="mt-10 lg:m-2 lg:mt-0 items-center" >
                 <Container fluid>
                     <Navbar.Brand className="text-orange select-none hover:text-whiteTxt transition-all lg:text-xl text-md font-jura flex flex-row items-center gap-2">
@@ -51,9 +72,9 @@ function FooterBar() {
                     <Nav className="me-auto items-end font-lexend font-extralight uppercase">
                     </Nav>
                     <Nav className="font-lexend items-end font-extralight uppercase">
-                        <Navbar.Text className="text-orangeWeak mr-2 hover:text-orangeWeak select-none transition-all">
+                        {/* <Navbar.Text className="text-orangeWeak mr-2 hover:text-orangeWeak select-none transition-all">
                             <FaSteam size={25} />
-                        </Navbar.Text>
+                        </Navbar.Text> */}
                         <Nav.Link href={instagramLink} target="_blank" className="text-orange hover:text-whiteTxt" active={false}>
                             <FaInstagram size={25} />
                         </Nav.Link>

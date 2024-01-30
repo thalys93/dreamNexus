@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Container, Image, Nav, Navbar } from "react-bootstrap"
 
 function NavigationBar() {
-  const [windowSize, setWindowSize] = useState(window.innerWidth)
+  const [windowSize, setWindowSize] = useState(window.innerWidth)  
 
   useEffect(() => {
     const handleRezise = () => setWindowSize(window.innerWidth)
@@ -23,7 +23,7 @@ function NavigationBar() {
   const checkRouteName = (routeName: string) => {
     if (routeName === '/About') {
       setIsAboutRoute(true)
-    } else if ( routeName === `/Project/${uid}/astralWield`) {
+    } else if (routeName === `/Project/${uid}/astralWield`) {
       setIsProjectRoute(true)
     } else if (routeName === '/Contact') {
       setIsContactRoute(true)
@@ -35,8 +35,8 @@ function NavigationBar() {
   }
 
   useEffect(() => {
-    checkRouteName(routeName)   
-        
+    checkRouteName(routeName)
+
   }, [routeName, isProjectRoute])
 
   return (
@@ -54,10 +54,10 @@ function NavigationBar() {
           <Nav className="me-auto items-end font-lexend font-extralight uppercase">
 
           </Nav>
-          <Nav className="font-lexend items-end font-extralight uppercase">            
-              <Nav.Link href="/About" className={!isAboutRoute ? 'text-whiteTxt hover:text-orange transition-all hover:underline underline-offset-4' : 'text-orange underline underline-offset-4'}>Sobre</Nav.Link>
-              <Nav.Link href={`/Project/${uid}/astralWield`} className={!isProjectRoute ? 'text-whiteTxt hover:text-orange transition-all hover:underline underline-offset-4' : 'text-orange underline underline-offset-4' }>Projetos</Nav.Link>
-              <Nav.Link href="/Contact" className={!isContactRoute ? 'text-whiteTxt hover:text-orange transition-all hover:underline underline-offset-4': 'text-orange underline underline-offset-4'}>Contato</Nav.Link>            
+          <Nav className="font-lexend items-end font-extralight uppercase">
+            <Nav.Link href="/About" className={!isAboutRoute ? 'text-whiteTxt hover:text-orange transition-all hover:underline underline-offset-4' : 'text-orange underline underline-offset-4'}>Sobre</Nav.Link>
+            <Nav.Link href={`/Project/${uid}/astralWield`} className={!isProjectRoute ? 'text-whiteTxt hover:text-orange transition-all hover:underline underline-offset-4' : 'text-orange underline underline-offset-4'}>Projetos</Nav.Link>
+            <Nav.Link href="/Contact" className={!isContactRoute ? 'text-whiteTxt hover:text-orange transition-all hover:underline underline-offset-4' : 'text-orange underline underline-offset-4'}>Contato</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

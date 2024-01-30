@@ -4,6 +4,7 @@ import Home from '../pages/Home';
 import About from '../pages/About';
 import Project_Info from '../pages/Project_Info';
 import Contact from '../pages/Contact';
+import Project_News from '../pages/Project_News';
 
 
 const router = createBrowserRouter([
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
             {
                 path: '/Project/:id/:name',
                 element: <Project_Info />                           
+            },
+            {
+                path: '/Project/news/making_of',
+                element: <Project_News />
             },
             {
                 path: '/Contact',

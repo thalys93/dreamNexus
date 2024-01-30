@@ -12,6 +12,12 @@ function Home() {
               <br /> você nunca vai querer <br />
               <b className="text-orange"> deixar </b>
             </p>
+
+            <p className="font-lexend font-extralight text-sm lg:text-lg">
+              <a href="/Project/news/making_of" target="_blank" className="text-whiteTxtWeak hover:text-orange transition-all duration-200">
+                Novas fotos da semana #1 (Astral Wield - Making of)
+              </a>
+            </p>
           </section>
         </Col>
 
@@ -19,7 +25,7 @@ function Home() {
           <section className="animate__animated animate__fadeIn select-none">
             <Figure>
               <Figure.Image
-                width={200}                
+                width={200}
                 alt="Felix the cat"
                 src="./Boneco1.png"
               />
